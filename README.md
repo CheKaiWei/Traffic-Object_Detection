@@ -11,3 +11,4 @@ Lane Detection: 道路识别
 
 # PPT
 详细的内容见PPT（具体的报告后续会更新）2021.2.25
+[项目PPT](https://github.com/CheKaiWei/Traffic-Object_Detection/blob/main/ML%20final%20project.pdf)

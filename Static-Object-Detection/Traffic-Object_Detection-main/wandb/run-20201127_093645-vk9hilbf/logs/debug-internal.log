@@ -1,0 +1,155 @@
+2020-11-27 09:36:45,976 INFO    MainThread:11020 [internal.py:wandb_internal():63] W&B internal server running at pid: 11020
+2020-11-27 09:36:45,978 DEBUG   HandlerThread:11020 [handler.py:handle_request():55] handle_request: check_version
+2020-11-27 09:36:45,978 INFO    WriterThread:11020 [datastore.py:open_for_write():76] open: D:\MACHINE LEARNING\Final_Proposal\Yolov5\yolov5-master\wandb\run-20201127_093645-vk9hilbf\run-vk9hilbf.wandb
+2020-11-27 09:36:45,984 DEBUG   SenderThread:11020 [sender.py:send():90] send: header
+2020-11-27 09:36:45,984 DEBUG   SenderThread:11020 [sender.py:send():90] send: request
+2020-11-27 09:36:45,984 DEBUG   SenderThread:11020 [sender.py:send_request():99] send_request: check_version
+2020-11-27 09:36:45,986 DEBUG   Thread-8  :11020 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): pypi.org:443
+2020-11-27 09:36:46,243 DEBUG   Thread-8  :11020 [connectionpool.py:_make_request():442] https://pypi.org:443 "GET /pypi/wandb/json HTTP/1.1" 200 51947
+2020-11-27 09:36:46,324 DEBUG   SenderThread:11020 [sender.py:send():90] send: run
+2020-11-27 09:36:46,330 INFO    SenderThread:11020 [sender.py:_maybe_setup_resume():281] checking resume status for None/YOLOv5/vk9hilbf
+2020-11-27 09:36:46,332 DEBUG   SenderThread:11020 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-27 09:36:46,580 DEBUG   SenderThread:11020 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-27 09:36:46,608 DEBUG   SenderThread:11020 [util.py:is_cygwin_git():315] Failed checking if running in CYGWIN due to: FileNotFoundError(2, 'The system cannot find the file specified', None, 2, None)
+2020-11-27 09:36:46,610 DEBUG   SenderThread:11020 [git.py:repo():30] git repository is invalid
+2020-11-27 09:36:46,614 DEBUG   SenderThread:11020 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-27 09:36:46,953 DEBUG   SenderThread:11020 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-27 09:36:46,959 DEBUG   HandlerThread:11020 [handler.py:handle_request():55] handle_request: run_start
+2020-11-27 09:36:46,963 INFO    SenderThread:11020 [dir_watcher.py:__init__():165] watching files in: D:\MACHINE LEARNING\Final_Proposal\Yolov5\yolov5-master\wandb\run-20201127_093645-vk9hilbf\files
+2020-11-27 09:36:46,963 INFO    SenderThread:11020 [sender.py:_start_run_threads():490] run started: vk9hilbf with start time 1606441005
+2020-11-27 09:36:46,963 DEBUG   SenderThread:11020 [sender.py:send():90] send: summary
+2020-11-27 09:36:46,964 INFO    SenderThread:11020 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-27 09:36:46,984 DEBUG   HandlerThread:11020 [git.py:repo():30] git repository is invalid
+2020-11-27 09:36:47,073 DEBUG   SenderThread:11020 [sender.py:send():90] send: files
+2020-11-27 09:36:47,073 INFO    SenderThread:11020 [sender.py:_save_file():568] saving file wandb-metadata.json with policy now
+2020-11-27 09:36:47,077 DEBUG   HandlerThread:11020 [handler.py:handle_request():55] handle_request: status
+2020-11-27 09:36:47,077 DEBUG   SenderThread:11020 [sender.py:send():90] send: request
+2020-11-27 09:36:47,077 DEBUG   SenderThread:11020 [sender.py:send_request():99] send_request: status
+2020-11-27 09:36:47,079 DEBUG   SenderThread:11020 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-27 09:36:47,100 DEBUG   Thread-15 :11020 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-27 09:36:47,329 DEBUG   SenderThread:11020 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-27 09:36:47,426 DEBUG   Thread-15 :11020 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-27 09:36:47,430 DEBUG   Thread-15 :11020 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-11-27 09:36:47,814 DEBUG   Thread-15 :11020 [connectionpool.py:_make_request():442] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/richardckw/YOLOv5/vk9hilbf/wandb-metadata.json?Expires=1606527407&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=fiUxYhpjDcJN52Qql0GFvf%2B3m3kGklduYCnULQMsApDFlEwMIvWHuE6wOdM9nU%2BXKtcwoV2FOGS626zddFERMc8opr0FI3%2BOoK5zbREiIKrOpjsmEFIaaT60DG8VafYR9IMC3A6WZ5iioNHCsl9Kb5m6OvvBgDXsZLxx257w%2BA0Ldm%2BOXEtYb4ph6cXsIDumhW8gXf6WwXoc65SZM%2BiCzeTe28bIzW1begBZtNzgYpRhNkPMJg7f0yu6Tn6mewvT5qHb7Vm97Jb%2FUZa5lUVpdcGzJ37A5ZbD%2FG61SXmG1pP2Rk%2FBLzT5CnqDHbrhBXtNL8Nipk4raWxUTve6%2BmocDA%3D%3D HTTP/1.1" 200 0
+2020-11-27 09:36:47,815 INFO    Thread-15 :11020 [upload_job.py:push():131] Uploaded file C:\Users\richa\AppData\Local\Temp\tmp9jdchb6fwandb\1zxsesl9-wandb-metadata.json
+2020-11-27 09:36:47,966 INFO    Thread-12 :11020 [dir_watcher.py:_on_file_created():213] file/dir created: D:\MACHINE LEARNING\Final_Proposal\Yolov5\yolov5-master\wandb\run-20201127_093645-vk9hilbf\files\wandb-metadata.json
+2020-11-27 09:36:47,966 INFO    Thread-12 :11020 [dir_watcher.py:_on_file_created():213] file/dir created: D:\MACHINE LEARNING\Final_Proposal\Yolov5\yolov5-master\wandb\run-20201127_093645-vk9hilbf\files\requirements.txt
+2020-11-27 09:36:47,966 INFO    Thread-12 :11020 [dir_watcher.py:_on_file_created():213] file/dir created: D:\MACHINE LEARNING\Final_Proposal\Yolov5\yolov5-master\wandb\run-20201127_093645-vk9hilbf\files\wandb-summary.json
+2020-11-27 09:36:47,966 INFO    Thread-12 :11020 [dir_watcher.py:_on_file_created():213] file/dir created: D:\MACHINE LEARNING\Final_Proposal\Yolov5\yolov5-master\wandb\run-20201127_093645-vk9hilbf\files\output.log
+2020-11-27 09:36:48,964 INFO    Thread-12 :11020 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\MACHINE LEARNING\Final_Proposal\Yolov5\yolov5-master\wandb\run-20201127_093645-vk9hilbf\files\output.log
+2020-11-27 09:36:50,208 DEBUG   Thread-9  :11020 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-27 09:36:50,454 DEBUG   SenderThread:11020 [sender.py:send():90] send: stats
+2020-11-27 09:36:50,542 DEBUG   Thread-9  :11020 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/richardckw/YOLOv5/vk9hilbf/file_stream HTTP/1.1" 200 None
+2020-11-27 09:36:52,773 DEBUG   Thread-9  :11020 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/richardckw/YOLOv5/vk9hilbf/file_stream HTTP/1.1" 200 None
+2020-11-27 09:36:55,027 DEBUG   SenderThread:11020 [sender.py:send():90] send: stats
+2020-11-27 09:36:55,248 DEBUG   Thread-9  :11020 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/richardckw/YOLOv5/vk9hilbf/file_stream HTTP/1.1" 200 None
+2020-11-27 09:36:57,120 DEBUG   HandlerThread:11020 [handler.py:handle_request():55] handle_request: poll_exit
+2020-11-27 09:36:57,120 DEBUG   SenderThread:11020 [sender.py:send():90] send: exit
+2020-11-27 09:36:57,120 INFO    SenderThread:11020 [sender.py:send_exit():168] handling exit code: 1
+2020-11-27 09:36:57,120 INFO    SenderThread:11020 [sender.py:send_exit():176] send defer
+2020-11-27 09:36:57,120 DEBUG   SenderThread:11020 [sender.py:send():90] send: request
+2020-11-27 09:36:57,120 DEBUG   SenderThread:11020 [sender.py:send_request():99] send_request: poll_exit
+2020-11-27 09:36:57,121 DEBUG   HandlerThread:11020 [handler.py:handle_request():55] handle_request: defer
+2020-11-27 09:36:57,121 INFO    HandlerThread:11020 [handler.py:handle_request_defer():69] handle defer: 0
+2020-11-27 09:36:57,121 DEBUG   SenderThread:11020 [sender.py:send():90] send: request
+2020-11-27 09:36:57,121 DEBUG   SenderThread:11020 [sender.py:send_request():99] send_request: defer
+2020-11-27 09:36:57,121 INFO    SenderThread:11020 [sender.py:send_request_defer():185] handle sender defer: 0
+2020-11-27 09:36:57,121 INFO    SenderThread:11020 [sender.py:send_request_defer():221] send defer: 1
+2020-11-27 09:36:57,121 DEBUG   HandlerThread:11020 [handler.py:handle_request():55] handle_request: defer
+2020-11-27 09:36:57,121 INFO    HandlerThread:11020 [handler.py:handle_request_defer():69] handle defer: 1
+2020-11-27 09:36:57,195 DEBUG   SenderThread:11020 [sender.py:send():90] send: request
+2020-11-27 09:36:57,195 DEBUG   SenderThread:11020 [sender.py:send_request():99] send_request: defer
+2020-11-27 09:36:57,195 INFO    SenderThread:11020 [sender.py:send_request_defer():185] handle sender defer: 1
+2020-11-27 09:36:57,195 INFO    SenderThread:11020 [sender.py:send_request_defer():221] send defer: 2
+2020-11-27 09:36:57,195 DEBUG   HandlerThread:11020 [handler.py:handle_request():55] handle_request: defer
+2020-11-27 09:36:57,196 INFO    HandlerThread:11020 [handler.py:handle_request_defer():69] handle defer: 2
+2020-11-27 09:36:57,196 DEBUG   SenderThread:11020 [sender.py:send():90] send: stats
+2020-11-27 09:36:57,196 DEBUG   SenderThread:11020 [sender.py:send():90] send: request
+2020-11-27 09:36:57,196 DEBUG   SenderThread:11020 [sender.py:send_request():99] send_request: defer
+2020-11-27 09:36:57,196 INFO    SenderThread:11020 [sender.py:send_request_defer():185] handle sender defer: 2
+2020-11-27 09:36:57,196 INFO    SenderThread:11020 [sender.py:send_request_defer():221] send defer: 3
+2020-11-27 09:36:57,196 DEBUG   HandlerThread:11020 [handler.py:handle_request():55] handle_request: defer
+2020-11-27 09:36:57,196 INFO    HandlerThread:11020 [handler.py:handle_request_defer():69] handle defer: 3
+2020-11-27 09:36:57,197 DEBUG   SenderThread:11020 [sender.py:send():90] send: summary
+2020-11-27 09:36:57,197 INFO    SenderThread:11020 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-27 09:36:57,197 DEBUG   SenderThread:11020 [sender.py:send():90] send: request
+2020-11-27 09:36:57,198 DEBUG   SenderThread:11020 [sender.py:send_request():99] send_request: defer
+2020-11-27 09:36:57,198 INFO    SenderThread:11020 [sender.py:send_request_defer():185] handle sender defer: 3
+2020-11-27 09:36:57,198 INFO    SenderThread:11020 [sender.py:send_request_defer():221] send defer: 4
+2020-11-27 09:36:57,198 DEBUG   HandlerThread:11020 [handler.py:handle_request():55] handle_request: defer
+2020-11-27 09:36:57,198 INFO    HandlerThread:11020 [handler.py:handle_request_defer():69] handle defer: 4
+2020-11-27 09:36:57,198 DEBUG   SenderThread:11020 [sender.py:send():90] send: request
+2020-11-27 09:36:57,198 DEBUG   SenderThread:11020 [sender.py:send_request():99] send_request: defer
+2020-11-27 09:36:57,198 INFO    SenderThread:11020 [sender.py:send_request_defer():185] handle sender defer: 4
+2020-11-27 09:36:57,198 INFO    SenderThread:11020 [dir_watcher.py:finish():279] shutting down directory watcher
+2020-11-27 09:36:57,331 DEBUG   Thread-9  :11020 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/richardckw/YOLOv5/vk9hilbf/file_stream HTTP/1.1" 200 None
+2020-11-27 09:36:57,968 INFO    Thread-12 :11020 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\MACHINE LEARNING\Final_Proposal\Yolov5\yolov5-master\wandb\run-20201127_093645-vk9hilbf\files\wandb-summary.json
+2020-11-27 09:36:57,969 INFO    SenderThread:11020 [dir_watcher.py:_on_file_modified():226] file/dir modified: D:\MACHINE LEARNING\Final_Proposal\Yolov5\yolov5-master\wandb\run-20201127_093645-vk9hilbf\files\output.log
+2020-11-27 09:36:57,969 INFO    SenderThread:11020 [dir_watcher.py:finish():309] scan: D:\MACHINE LEARNING\Final_Proposal\Yolov5\yolov5-master\wandb\run-20201127_093645-vk9hilbf\files
+2020-11-27 09:36:57,969 INFO    SenderThread:11020 [dir_watcher.py:finish():315] scan save: D:\MACHINE LEARNING\Final_Proposal\Yolov5\yolov5-master\wandb\run-20201127_093645-vk9hilbf\files\config.yaml config.yaml
+2020-11-27 09:36:57,970 INFO    SenderThread:11020 [dir_watcher.py:finish():315] scan save: D:\MACHINE LEARNING\Final_Proposal\Yolov5\yolov5-master\wandb\run-20201127_093645-vk9hilbf\files\output.log output.log
+2020-11-27 09:36:57,970 INFO    SenderThread:11020 [dir_watcher.py:finish():315] scan save: D:\MACHINE LEARNING\Final_Proposal\Yolov5\yolov5-master\wandb\run-20201127_093645-vk9hilbf\files\requirements.txt requirements.txt
+2020-11-27 09:36:57,973 DEBUG   Thread-16 :11020 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-27 09:36:57,975 INFO    SenderThread:11020 [dir_watcher.py:finish():315] scan save: D:\MACHINE LEARNING\Final_Proposal\Yolov5\yolov5-master\wandb\run-20201127_093645-vk9hilbf\files\wandb-metadata.json wandb-metadata.json
+2020-11-27 09:36:57,975 INFO    SenderThread:11020 [dir_watcher.py:finish():315] scan save: D:\MACHINE LEARNING\Final_Proposal\Yolov5\yolov5-master\wandb\run-20201127_093645-vk9hilbf\files\wandb-summary.json wandb-summary.json
+2020-11-27 09:36:57,975 DEBUG   Thread-17 :11020 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-27 09:36:57,976 INFO    SenderThread:11020 [sender.py:send_request_defer():221] send defer: 5
+2020-11-27 09:36:57,978 DEBUG   HandlerThread:11020 [handler.py:handle_request():55] handle_request: defer
+2020-11-27 09:36:57,978 INFO    HandlerThread:11020 [handler.py:handle_request_defer():69] handle defer: 5
+2020-11-27 09:36:57,979 DEBUG   SenderThread:11020 [sender.py:send():90] send: request
+2020-11-27 09:36:57,979 DEBUG   SenderThread:11020 [sender.py:send_request():99] send_request: defer
+2020-11-27 09:36:57,979 INFO    SenderThread:11020 [sender.py:send_request_defer():185] handle sender defer: 5
+2020-11-27 09:36:57,979 INFO    SenderThread:11020 [file_pusher.py:finish():169] shutting down file pusher
+2020-11-27 09:36:57,979 INFO    SenderThread:11020 [sender.py:send_request_defer():221] send defer: 6
+2020-11-27 09:36:57,979 DEBUG   Thread-18 :11020 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-27 09:36:57,980 DEBUG   HandlerThread:11020 [handler.py:handle_request():55] handle_request: defer
+2020-11-27 09:36:57,980 INFO    HandlerThread:11020 [handler.py:handle_request_defer():69] handle defer: 6
+2020-11-27 09:36:57,981 DEBUG   SenderThread:11020 [sender.py:send():90] send: request
+2020-11-27 09:36:57,982 DEBUG   SenderThread:11020 [sender.py:send_request():99] send_request: defer
+2020-11-27 09:36:57,982 INFO    SenderThread:11020 [sender.py:send_request_defer():185] handle sender defer: 6
+2020-11-27 09:36:57,983 DEBUG   Thread-19 :11020 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-27 09:36:58,202 DEBUG   Thread-9  :11020 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/richardckw/YOLOv5/vk9hilbf/file_stream HTTP/1.1" 200 None
+2020-11-27 09:36:58,242 DEBUG   Thread-16 :11020 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-27 09:36:58,244 DEBUG   Thread-19 :11020 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-27 09:36:58,248 DEBUG   Thread-19 :11020 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-11-27 09:36:58,250 DEBUG   Thread-16 :11020 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-11-27 09:36:58,303 DEBUG   Thread-17 :11020 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-27 09:36:58,310 DEBUG   Thread-17 :11020 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-11-27 09:36:58,313 DEBUG   Thread-18 :11020 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-27 09:36:58,321 DEBUG   Thread-18 :11020 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-11-27 09:36:58,405 DEBUG   Thread-9  :11020 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/richardckw/YOLOv5/vk9hilbf/file_stream HTTP/1.1" 200 None
+2020-11-27 09:36:58,406 INFO    SenderThread:11020 [sender.py:send_request_defer():221] send defer: 7
+2020-11-27 09:36:58,407 DEBUG   HandlerThread:11020 [handler.py:handle_request():55] handle_request: defer
+2020-11-27 09:36:58,407 INFO    HandlerThread:11020 [handler.py:handle_request_defer():69] handle defer: 7
+2020-11-27 09:36:58,407 DEBUG   SenderThread:11020 [sender.py:send():90] send: request
+2020-11-27 09:36:58,407 DEBUG   SenderThread:11020 [sender.py:send_request():99] send_request: defer
+2020-11-27 09:36:58,407 INFO    SenderThread:11020 [sender.py:send_request_defer():185] handle sender defer: 7
+2020-11-27 09:36:58,407 INFO    SenderThread:11020 [sender.py:send_request_defer():221] send defer: 8
+2020-11-27 09:36:58,407 DEBUG   SenderThread:11020 [sender.py:send():90] send: final
+2020-11-27 09:36:58,408 DEBUG   SenderThread:11020 [sender.py:send():90] send: footer
+2020-11-27 09:36:58,408 DEBUG   HandlerThread:11020 [handler.py:handle_request():55] handle_request: defer
+2020-11-27 09:36:58,408 INFO    HandlerThread:11020 [handler.py:handle_request_defer():69] handle defer: 8
+2020-11-27 09:36:58,408 DEBUG   SenderThread:11020 [sender.py:send():90] send: request
+2020-11-27 09:36:58,408 DEBUG   SenderThread:11020 [sender.py:send_request():99] send_request: defer
+2020-11-27 09:36:58,408 INFO    SenderThread:11020 [sender.py:send_request_defer():185] handle sender defer: 8
+2020-11-27 09:36:58,623 DEBUG   Thread-19 :11020 [connectionpool.py:_make_request():442] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/richardckw/YOLOv5/vk9hilbf/wandb-summary.json?Expires=1606527418&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=FFiu%2BRtNqmCaKqH2X%2F9cskoNKM0BNeCYff%2Fe908rjEuBs10w8jv8UQ366jBqUV30B68eREUMpf%2FdEBeOS%2FJ7NNpbMqOuytzJzpZ0V7DMs9ib3QaeP1bfi7ubD2OtOSEvGP3Q6zUrQcPSNRBiCtKTvXocjMezqlDeffUruoquIBrMhUg44GkNqq5%2BoxTzLi2tUOw1DMacxAnuIrAAPDl%2FCm2IGpA2Vq0T983wlnyonuFN63VFocV5k6ewJ%2BAYJN4cdipL7PqRXeE6yLd3EyoEinB2wkdAj25qg0WlMIGhWOgRR1%2Bnb%2BD7CHnqwJjgEn12wvDhf%2Fi%2FBR4XPj0MTuNogA%3D%3D HTTP/1.1" 200 0
+2020-11-27 09:36:58,624 INFO    Thread-19 :11020 [upload_job.py:push():131] Uploaded file D:\MACHINE LEARNING\Final_Proposal\Yolov5\yolov5-master\wandb\run-20201127_093645-vk9hilbf\files\wandb-summary.json
+2020-11-27 09:36:58,696 DEBUG   Thread-17 :11020 [connectionpool.py:_make_request():442] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/richardckw/YOLOv5/vk9hilbf/output.log?Expires=1606527418&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=JQEonh8u0gsW9dLKGfTGjVJBUINQ1RnlabJSFblziie8MyCL1CjplWQF6X3CtYWigDVp6QX5od8tqRiZ5fv16EHyujHMFzqgiuLjTF6mxso2f0QCr4NLCFhu2W5Lf3uDDe8vPFLNGK%2FhBGbuRm83uIK77PqpWmwTAYQkd3xHBlBn8pDGiy5kLLi66FCnvqSf3r0xc9SBxpe7LxQU08%2FYd4l11pZqPXo0ZdxvR2I2Q1FsVmg8yF8yy10GPe%2BOM3TN6%2BFttpy8J97H86LfIsw1bw8mG2nh%2B%2BCK9xVV26aEbrbDdjiQnbcoprZlWl8AFOX%2BXFJpWju188EedI%2B1Rhf02Q%3D%3D HTTP/1.1" 200 0
+2020-11-27 09:36:58,697 INFO    Thread-17 :11020 [upload_job.py:push():131] Uploaded file D:\MACHINE LEARNING\Final_Proposal\Yolov5\yolov5-master\wandb\run-20201127_093645-vk9hilbf\files\output.log
+2020-11-27 09:36:58,707 DEBUG   Thread-16 :11020 [connectionpool.py:_make_request():442] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/richardckw/YOLOv5/vk9hilbf/config.yaml?Expires=1606527418&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=HEhkO1oKTpLpJgNa19bbYDsAcvW7P1p0hf3x2NneTYNG185sZAy9L8DUkZOUeiNdhV%2F6DKNQwsjJahF3X3XOnu4dGMKYXqxJ5RG5BwABHI%2FZSudS4uYHn0Yu83PkIfu1QK4o008b%2Fe%2BtBJZUybbdJ%2BRr1uBdsMfVxI0pMbSq3vwpVhwb2%2BgS5IOlrX37WpZyxQG00PHAHzmWAf78o%2FIljNnhXMmQczu6%2FgC2aJayQyvwy9Fn0uXidgqqkxeaTqrHH58YIXZ%2F7yPGVwezqwUn3U1CkyGloN0DgGbd87k9fPvqoH8Aqc96gAN7B%2Fm%2BhM%2Fu9xA9ZG4vvWVYzb%2FVLBqafg%3D%3D HTTP/1.1" 200 0
+2020-11-27 09:36:58,708 INFO    Thread-16 :11020 [upload_job.py:push():131] Uploaded file D:\MACHINE LEARNING\Final_Proposal\Yolov5\yolov5-master\wandb\run-20201127_093645-vk9hilbf\files\config.yaml
+2020-11-27 09:36:58,779 DEBUG   Thread-18 :11020 [connectionpool.py:_make_request():442] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/richardckw/YOLOv5/vk9hilbf/requirements.txt?Expires=1606527418&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=CUCPhjL%2BgG5xadp43ombtaA1I1O%2FqlO2iehl66hqgDctYpqndrKeQrPvvK%2B893S7Aundmu5n9Sm5Np779ilF9RKbt5Ct4FXIlMmd%2BRdM7zJCLHi83HiLP%2FnBoZygiR35vTmliRUy6oi9l1xEv810pUVelrAwe6QLbteGEOjopiwJM8yG5RLKiVjEF4jChad0%2BWjjNZW0%2F0MViFxJGCmZV%2B5j2DAIGW4d3Te7A7cc0R8okz6YfeQMJIKhU9k48oSJJPD74gh0%2BPV3xxNBHgFMQ6ZucX1gurIx9gsC6DbwNcMRfLH4OtBJIf9JHfvJ%2BpowPqE%2FmuKKbSxGofpzmRChTg%3D%3D HTTP/1.1" 200 0
+2020-11-27 09:36:58,781 INFO    Thread-18 :11020 [upload_job.py:push():131] Uploaded file D:\MACHINE LEARNING\Final_Proposal\Yolov5\yolov5-master\wandb\run-20201127_093645-vk9hilbf\files\requirements.txt
+2020-11-27 09:36:59,122 DEBUG   HandlerThread:11020 [handler.py:handle_request():55] handle_request: poll_exit
+2020-11-27 09:36:59,122 DEBUG   SenderThread:11020 [sender.py:send():90] send: request
+2020-11-27 09:36:59,122 DEBUG   SenderThread:11020 [sender.py:send_request():99] send_request: poll_exit
+2020-11-27 09:36:59,122 INFO    SenderThread:11020 [file_pusher.py:join():174] waiting for file pusher
+2020-11-27 09:36:59,126 DEBUG   HandlerThread:11020 [handler.py:handle_request():55] handle_request: get_summary
+2020-11-27 09:36:59,126 DEBUG   HandlerThread:11020 [handler.py:handle_request():55] handle_request: sampled_history
+2020-11-27 09:36:59,127 DEBUG   HandlerThread:11020 [handler.py:handle_request():55] handle_request: shutdown
+2020-11-27 09:36:59,127 INFO    HandlerThread:11020 [handler.py:finish():271] shutting down handler
+2020-11-27 09:36:59,408 INFO    WriterThread:11020 [datastore.py:close():257] close: D:\MACHINE LEARNING\Final_Proposal\Yolov5\yolov5-master\wandb\run-20201127_093645-vk9hilbf\run-vk9hilbf.wandb
+2020-11-27 09:37:00,123 INFO    SenderThread:11020 [sender.py:finish():642] shutting down sender
+2020-11-27 09:37:00,123 INFO    SenderThread:11020 [file_pusher.py:finish():169] shutting down file pusher
+2020-11-27 09:37:00,123 INFO    SenderThread:11020 [file_pusher.py:join():174] waiting for file pusher
+2020-11-27 09:37:00,124 INFO    MainThread:11020 [internal.py:handle_exit():138] Internal process exited

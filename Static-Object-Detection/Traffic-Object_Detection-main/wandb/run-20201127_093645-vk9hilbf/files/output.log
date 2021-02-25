@@ -1,0 +1,29 @@
+Scanning images:   0%|                                                                         | 0/128 [00:00<?, ?it/s]Scanning images:  11%|██████▉                                                        | 14/128 [00:00<00:00, 131.23it/s]Scanning images:  23%|██████████████▎                                                | 29/128 [00:00<00:00, 134.61it/s]Scanning images:  34%|█████████████████████▋                                         | 44/128 [00:00<00:00, 137.45it/s]Scanning images:  46%|█████████████████████████████                                  | 59/128 [00:00<00:00, 138.37it/s]Scanning images:  58%|████████████████████████████████████▍                          | 74/128 [00:00<00:00, 139.80it/s]Scanning images:  70%|███████████████████████████████████████████▊                   | 89/128 [00:00<00:00, 141.21it/s]Scanning images:  81%|██████████████████████████████████████████████████▍           | 104/128 [00:00<00:00, 143.03it/s]Scanning images:  93%|█████████████████████████████████████████████████████████▋    | 119/128 [00:00<00:00, 142.68it/s]Scanning images: 100%|██████████████████████████████████████████████████████████████| 128/128 [00:00<00:00, 141.81it/s]
+0it [00:00, ?it/s]Scanning labels ..\coco128\labels\train2017.cache (126 found, 0 missing, 2 empty, 0 duplicate, for 128 images): 128it [00:00, 11631.41it/s]
+  0%|                                                                                          | 0/128 [00:00<?, ?it/s]Caching images (0.1GB):  80%|███████████████████████████████████████████▍          | 103/128 [00:00<00:00, 1002.69it/s]Caching images (0.1GB): 100%|██████████████████████████████████████████████████████| 128/128 [00:00<00:00, 1069.27it/s]
+Traceback (most recent call last):
+  File "train.py", line 490, in <module>
+    train(hyp, opt, device, tb_writer, wandb)
+  File "train.py", line 185, in train
+    rank=rank, world_size=opt.world_size, workers=opt.workers)
+  File "D:\MACHINE LEARNING\Final_Proposal\Yolov5\yolov5-master\utils\datasets.py", line 77, in create_dataloader
+    collate_fn=LoadImagesAndLabels.collate_fn)  # torch.utils.data.DataLoader()
+  File "D:\MACHINE LEARNING\Final_Proposal\Yolov5\yolov5-master\utils\datasets.py", line 90, in __init__
+    self.iterator = super().__iter__()
+  File "A:\Anaconda\envs\CondaLearning\lib\site-packages\torch\utils\data\dataloader.py", line 352, in __iter__
+    return self._get_iterator()
+  File "A:\Anaconda\envs\CondaLearning\lib\site-packages\torch\utils\data\dataloader.py", line 294, in _get_iterator
+    return _MultiProcessingDataLoaderIter(self)
+  File "A:\Anaconda\envs\CondaLearning\lib\site-packages\torch\utils\data\dataloader.py", line 801, in __init__
+    w.start()
+  File "A:\Anaconda\envs\CondaLearning\lib\multiprocessing\process.py", line 112, in start
+    self._popen = self._Popen(self)
+  File "A:\Anaconda\envs\CondaLearning\lib\multiprocessing\context.py", line 223, in _Popen
+    return _default_context.get_context().Process._Popen(process_obj)
+  File "A:\Anaconda\envs\CondaLearning\lib\multiprocessing\context.py", line 322, in _Popen
+    return Popen(process_obj)
+  File "A:\Anaconda\envs\CondaLearning\lib\multiprocessing\popen_spawn_win32.py", line 89, in __init__
+    reduction.dump(process_obj, to_child)
+  File "A:\Anaconda\envs\CondaLearning\lib\multiprocessing\reduction.py", line 60, in dump
+    ForkingPickler(file, protocol).dump(obj)
+BrokenPipeError: [Errno 32] Broken pipe

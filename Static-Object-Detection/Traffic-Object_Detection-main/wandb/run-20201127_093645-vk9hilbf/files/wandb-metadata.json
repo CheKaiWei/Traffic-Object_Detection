@@ -1,0 +1,31 @@
+{
+    "os": "Windows-10-10.0.18362-SP0",
+    "python": "3.7.9",
+    "heartbeatAt": "2020-11-27T01:36:46.973858",
+    "startedAt": "2020-11-27T01:36:45.021080",
+    "docker": null,
+    "gpu": "GeForce GTX 1660 SUPER",
+    "gpu_count": 1,
+    "cpu_count": 12,
+    "cuda": null,
+    "args": [
+        "--img",
+        "640",
+        "--batch",
+        "16",
+        "--epochs",
+        "3",
+        "--data",
+        "coco128.yaml",
+        "--weights",
+        "yolov5s.pt",
+        "--nosave",
+        "--cache"
+    ],
+    "state": "running",
+    "codePath": "train.py",
+    "program": "train.py",
+    "host": "DESKTOP-KKDSGFD",
+    "username": "richa",
+    "executable": "A:\\Anaconda\\envs\\CondaLearning\\python.exe"
+}
